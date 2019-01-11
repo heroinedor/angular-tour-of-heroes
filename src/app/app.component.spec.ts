@@ -3,10 +3,10 @@ import { AppComponent } from './app.component';
 import {Component} from '@angular/core';
 
 @Component({
-  selector: 'app-heroes',
+  selector: 'router-outlet',
   template: ''
 })
-class MockHeroesComponent {
+class MockRouterOutletComponent {
 }
 
 @Component({
@@ -22,7 +22,7 @@ describe('AppComponent', () => {
     TestBed.configureTestingModule({
       declarations: [
         AppComponent,
-        MockHeroesComponent,
+        MockRouterOutletComponent,
         MockMessagesComponent
       ],
     }).compileComponents();

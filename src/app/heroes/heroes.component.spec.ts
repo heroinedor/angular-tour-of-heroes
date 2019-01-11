@@ -3,6 +3,7 @@ import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { HeroesComponent } from './heroes.component';
 import {Component, Input} from '@angular/core';
 import {Hero} from '../hero';
+import {RouterTestingModule} from '@angular/router/testing';
 
 
 @Component({
@@ -20,6 +21,7 @@ describe('HeroesComponent', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       declarations: [ HeroesComponent, MockHeroesDetailComponent ],
+      imports: [ RouterTestingModule  ]
     })
     .compileComponents();
   }));
