@@ -9,13 +9,21 @@ import {Component} from '@angular/core';
 class MockHeroesComponent {
 }
 
+@Component({
+  selector: 'app-messages',
+  template: ''
+})
+class MockMessagesComponent {
+}
+
 
 describe('AppComponent', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       declarations: [
         AppComponent,
-        MockHeroesComponent
+        MockHeroesComponent,
+        MockMessagesComponent
       ],
     }).compileComponents();
   }));
