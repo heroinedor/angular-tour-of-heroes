@@ -96,6 +96,4 @@ export class HeroService {
       return of(result as T);
     };
   }
-
-
 }
