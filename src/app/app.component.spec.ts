@@ -1,13 +1,7 @@
 import { TestBed, async } from '@angular/core/testing';
 import { AppComponent } from './app.component';
 import {Component} from '@angular/core';
-
-@Component({
-  selector: 'router-outlet',
-  template: ''
-})
-class MockRouterOutletComponent {
-}
+import {RouterTestingModule} from '@angular/router/testing';
 
 @Component({
   selector: 'app-messages',
@@ -22,9 +16,9 @@ describe('AppComponent', () => {
     TestBed.configureTestingModule({
       declarations: [
         AppComponent,
-        MockRouterOutletComponent,
         MockMessagesComponent
       ],
+      imports: [ RouterTestingModule  ]
     }).compileComponents();
   }));
 
